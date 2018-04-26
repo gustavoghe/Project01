@@ -21,6 +21,7 @@ namespace EmailSenderV01
         public string login = "gustavoghe@gmail.com";
         public string smtp = "smtp.gmail.com";
         public string port = "587";
+        public string mailingfile = @"C:\Resource\Data0X.txt";
 
 
 

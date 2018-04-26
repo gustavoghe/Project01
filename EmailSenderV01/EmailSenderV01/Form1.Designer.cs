@@ -55,6 +55,8 @@
             this.btnreplace = new System.Windows.Forms.Button();
             this.txtreplace = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnloadlist = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -292,11 +294,30 @@
             this.label11.TabIndex = 25;
             this.label11.Text = "Test Text";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(804, 102);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(352, 381);
+            this.listBox1.TabIndex = 26;
+            // 
+            // btnloadlist
+            // 
+            this.btnloadlist.Location = new System.Drawing.Point(685, 102);
+            this.btnloadlist.Name = "btnloadlist";
+            this.btnloadlist.Size = new System.Drawing.Size(113, 40);
+            this.btnloadlist.TabIndex = 27;
+            this.btnloadlist.Text = "Load Mailing List";
+            this.btnloadlist.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 491);
+            this.ClientSize = new System.Drawing.Size(1186, 514);
+            this.Controls.Add(this.btnloadlist);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtreplace);
             this.Controls.Add(this.btnreplace);
@@ -359,6 +380,8 @@
         private System.Windows.Forms.Button btnreplace;
         private System.Windows.Forms.TextBox txtreplace;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnloadlist;
     }
 }
 
