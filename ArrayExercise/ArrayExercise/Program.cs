@@ -18,15 +18,17 @@ namespace ArrayExercise
             
 
             int h = 1;
-            while (h > 0)
+            while (h == 1)
             {
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("Welcome to Array Exercise:");
                 Console.WriteLine("Please choose an option from the menu by typing the number:");
                 Console.WriteLine("1) Create an Array and populate it with random numbers");
                 Console.WriteLine("2) Display Array in original order");
                 Console.WriteLine("3) Display Array in crescent order");
                 Console.WriteLine("4) Display Array in decrescent order");
-                Console.WriteLine("5) Exit Program");
+                Console.WriteLine("5) Kenion´s Lets play Indexes");
+                Console.WriteLine("6) Exit Program");
                 //Console.WriteLine("1)");
 
                 int Option = int.Parse(Console.ReadLine());
@@ -68,6 +70,22 @@ namespace ArrayExercise
                             break;
                         }
                     case 5:
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Lets play Kenion´s game. Here is the current Array");
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            DisplayArray(InitialArray);
+                            int arraysize = InitialArray.Length;
+                            Console.WriteLine("Your array size is {0}", arraysize);
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Now, type a number");
+                            int input1 = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Now, from the array displayed, choose an index number where you would like to place this number ({0})", input1);
+                            int index = int.Parse(Console.ReadLine());
+                            InitialArray[index] = input1;
+                            break;
+                        }
+                    case 6:
                         {
                             Console.WriteLine("Press anykey to exit");
                             Console.ReadLine();
